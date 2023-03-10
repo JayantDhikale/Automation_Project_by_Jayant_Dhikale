@@ -1,0 +1,843 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 10, 2023 06:58:13 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@Cart</a><a class="dropdown-item" href="#">@Inventory</a><a class="dropdown-item" href="#">@Checkout</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Page feature</p>
+            <p class="text-sm">
+              <span>6:58:14 pm</span> / <span>00:00:03:517</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Page feature</h5>
+<span class='badge badge-success'>03.10.2023 6:58:14 pm</span>
+<span class='badge badge-danger'>03.10.2023 6:58:17 pm</span>
+<span class='badge badge-default'>00:00:03:517</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify Login Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.user_is_on_login_page_url(java.lang.String)">
+                <span>Given User is on login page url "https://www.saucedemo.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.login_logo_is_displayed()">
+                <span>Then Login logo is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.username_field_is_displayed()">
+                <span>Then Username field is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.password_field_is_displyed()">
+                <span>Then Password field is displyed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.login_button_is_displayed()">
+                <span>Then Login button is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.accceptable_usernames_are_displayed_below_login_button()">
+                <span>Then Accceptable usernames are displayed below login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.accceptable_password_is_displayed_below_login_button()">
+                <span>Then Accceptable password is displayed below login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.user_enters_username_as(java.lang.String)">
+                <span>When User enters username as "standard_user"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.user_enters_password_as(java.lang.String)">
+                <span>When User enters password as "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.user_clicks_on_login_button()">
+                <span>When user clicks on login  button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LoginStepDef.inventory_page_is_displyed_with_url(java.lang.String)">
+                <span>Then Inventory page is displyed with url "https://www.saucedemo.com/inventory.html"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Inventory Page feature</p>
+            <p class="text-sm">
+              <span>6:58:17 pm</span> / <span>00:00:00:258</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Inventory Page feature</h5>
+<span class='badge badge-success'>03.10.2023 6:58:17 pm</span>
+<span class='badge badge-danger'>03.10.2023 6:58:17 pm</span>
+<span class='badge badge-default'>00:00:00:258</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Verify Inventory Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.user_is_on_inventory_page()">
+                <span>Given User is on Inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.app_logo_is_displayed()">
+                <span>Then App logo is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.options_menu_is_displayed()">
+                <span>Then Options Menu is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.cart_button_is_displayed()">
+                <span>Then Cart button is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.product_sorting_button_is_displyed()">
+                <span>Then Product sorting button is displyed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.page_title_is_displyed_as(java.lang.String)">
+                <span>Then Page title is displyed as "Products"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.all_inventory_products_are_displayed()">
+                <span>Then All inventory products are displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.add_to_cart_buttons_are_displayed()">
+                <span>Then Add to cart buttons are displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.social_media_handles_are_displayed_on_footers_left_hand_side()">
+                <span>Then Social media handles are displayed on footers left hand side</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.user_choosed_a_product_and_clicked_on_add_to_cart_button()">
+                <span>When User choosed a product and clicked on add to cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.user_clicks_on_cart_button()">
+                <span>When user clicks on Cart  button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.InventoryStepDef.cart_page_is_displyed_with_url(java.lang.String)">
+                <span>Then Cart page is displyed with url "https://www.saucedemo.com/cart.html"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Cart Page feature</p>
+            <p class="text-sm">
+              <span>6:58:17 pm</span> / <span>00:00:00:188</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Cart Page feature</h5>
+<span class='badge badge-success'>03.10.2023 6:58:17 pm</span>
+<span class='badge badge-danger'>03.10.2023 6:58:18 pm</span>
+<span class='badge badge-default'>00:00:00:188</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Verify Cart Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.user_is_on_cart_page()">
+                <span>Given User is on Cart page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.page_title_is_displyed_as(java.lang.String)">
+                <span>Then Page title is displyed as  "Your Cart"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.cart_quantity_label_is_displayed()">
+                <span>Then Cart quantity label is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.cart_description_label_is_displayed()">
+                <span>Then Cart description label is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.item_name_is_displayed_as(java.lang.String)">
+                <span>Then Item name is displayed as "Sauce Labs Backpack"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.remove_buttons_is_displayed()">
+                <span>Then Remove buttons is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.continue_shopping_buttons_is_displayed()">
+                <span>Then Continue shopping buttons is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.checkout_buttons_is_displayed()">
+                <span>Then Checkout buttons is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.user_clicked_on_checkout_button()">
+                <span>When User clicked on Checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CartStepDef.checkout_step_one_page_is_displyed_with_url(java.lang.String)">
+                <span>Then Checkout step one page is displyed with url "https://www.saucedemo.com/checkout-step-one.html"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checkout Step one Page feature</p>
+            <p class="text-sm">
+              <span>6:58:18 pm</span> / <span>00:00:00:345</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Checkout Step one Page feature</h5>
+<span class='badge badge-success'>03.10.2023 6:58:18 pm</span>
+<span class='badge badge-danger'>03.10.2023 6:58:18 pm</span>
+<span class='badge badge-default'>00:00:00:345</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>Verify Checkout Step one Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.user_is_on_checkout_page()">
+                <span>Given User is on Checkout page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.page_title_is_displyed_like(java.lang.String)">
+                <span>Then Page title is displyed like "Checkout: Your Information"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.first_name_field_is_displayed()">
+                <span>Then First name field is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.last_name_field_is_displayed()">
+                <span>Then Last name field is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.postal_code_field_is_displayed()">
+                <span>Then Postal code field is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.cancel_buttons_is_displayed()">
+                <span>Then Cancel buttons is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.continue_buttons_is_displayed()">
+                <span>Then Continue buttons is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.user_entered_firstname_as(java.lang.String)">
+                <span>When User entered firstname as "Jayant"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.user_entered_lastname_as(java.lang.String)">
+                <span>When User entered lastname as "Dhikale"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.user_entered_postal_code_as(java.lang.String)">
+                <span>When User entered postal code as "123456"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.user_clicked_on_continue_button()">
+                <span>When User clicked on Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.CheckoutStepDef.checkout_step_two_page_is_displyed_with_url(java.lang.String)">
+                <span>Then Checkout step two page is displyed with url "https://www.saucedemo.com/checkout-step-two.html"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify Login Page</a>
+<div class="">
+<span class="badge badge-default">Login Page feature.Verify Login Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Cart</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Cart</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='32' id='33'>Verify Cart Page</a>
+<div class="">
+<span class="badge badge-default">Cart Page feature.Verify Cart Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Inventory</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Inventory</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='17'>Verify Inventory Page</a>
+<div class="">
+<span class="badge badge-default">Inventory Page feature.Verify Inventory Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Checkout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Checkout</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='46' id='47'>Verify Checkout Step one Page</a>
+<div class="">
+<span class="badge badge-default">Checkout Step one Page feature.Verify Checkout Step one Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 10, 2023 06:58:13 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 10, 2023 06:58:18 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>4</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>45</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login Page feature":3.517,"Inventory Page feature":0.258,"Cart Page feature":0.188,"Checkout Step one Page feature":0.345
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@login</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Cart</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Inventory</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Checkout</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>appname</td>
+<td>Cucumber Framework</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Project By - Jayant Dhikale</td>
+</tr>
+<tr>
+<td>build</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 4,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 45,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
