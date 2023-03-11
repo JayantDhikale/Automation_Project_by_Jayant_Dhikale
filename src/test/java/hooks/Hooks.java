@@ -1,8 +1,4 @@
 package hooks;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
 import baseUtility.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
@@ -14,22 +10,28 @@ public class Hooks extends BaseClass {
 
 	Scenario scn;
 	static BaseClass bc = new BaseClass();
+	
 	@Before
 	public void beforeScenario(Scenario scenario)
 	{
 	    this.scn = scenario;
 	}
 	
-	
 	@After
 	public void afterScenario()
-	{
-		String scnName =scn.getName();
-		
+	{	
 		if(scn.isFailed())
 		{
-		byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-		scn.attach(screenshot, "image/png", scnName);
+			bc.takeScreenShot(driver, scn);
+		}
+		
+		try
+		{
+		Thread.sleep(2000);	
+		}
+		catch(InterruptedException e)
+		{
+			e.printStackTrace();
 		}
 	}
 	

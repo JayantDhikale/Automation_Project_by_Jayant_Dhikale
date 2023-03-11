@@ -1,9 +1,11 @@
-C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\pageObjects\CartPage.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\testRunner\TestRunner.java
+C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\stepDefinition\CheckoutTwoStepDef.java
+C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\pageObjects\CartPage.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\stepDefinition\CheckoutStepDef.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\pageObjects\CheckoutPage.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\pageObjects\LoginPage.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\baseUtility\BaseClass.java
+C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\pageObjects\CheckoutTwoPage.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\stepDefinition\CartStepDef.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\pageObjects\InventoryPage.java
 C:\Users\JD\eclipse-workspace\ProjCucumber\src\test\java\stepDefinition\InventoryStepDef.java

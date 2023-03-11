@@ -8,7 +8,7 @@ Feature: Inventory Page feature
     Then Options Menu is displayed
     Then Cart button is displayed
     Then Product sorting button is displyed 
-    Then Page title is displyed as "Products"
+    Then Page title is displyed as like "Products"
     Then All inventory products are displayed
     Then Add to cart buttons are displayed
     Then Social media handles are displayed on footers left hand side

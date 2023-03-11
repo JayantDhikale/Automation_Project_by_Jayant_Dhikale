@@ -1,7 +1,5 @@
 package stepDefinition;
 
-import java.time.Duration;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import baseUtility.BaseClass;
@@ -14,17 +12,16 @@ import pageObjects.LoginPage;
 public class LoginStepDef extends BaseClass{
 
 	 public static WebDriver driver;
+	 public static LoginStepDef lsd;
 	 LoginPage lp;
 	 Scenario scn;
 	@Given("User is on login page url {string}")
 	public void user_is_on_login_page_url(String url) {
-		LoginStepDef lsd = new LoginStepDef();
-		driver = lsd.getDriver();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		lsd = new LoginStepDef();
+		driver = lsd.getDriver(url);
+		lsd.waitTime(driver, 5);
 		 lp = new LoginPage(driver);
-		 driver.get(url);
-	
 	}
 
 	@Then("Login logo is displayed")

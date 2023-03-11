@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
    //tags = "",
    dryRun= false ,
    monochrome= true ,
-   plugin= {"html:Reports/cucumber-html-report", 
+   plugin= {"html:Reports/cucumber-html-report.html", 
 			"json:Reports/cucumber-json-report.json",
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
    }

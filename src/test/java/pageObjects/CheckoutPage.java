@@ -9,8 +9,8 @@ public class CheckoutPage {
 
 private WebDriver driver;
 	
-	// 1.WebElements
-		
+//1.WebElements
+
 		@FindBy(xpath = "//*[@class='title']")
 		private WebElement title;
 		

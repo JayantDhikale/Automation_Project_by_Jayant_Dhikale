@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extentreports>
+<extentreports xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="config.xsd" >
     <configuration>
         <!-- report theme -->
         <!-- standard, dark -->
@@ -21,7 +22,7 @@
         
         <!-- location of charts in the test view -->
         <!-- top, bottom -->
-        <testViewChartLocation>bottom</testViewChartLocation>
+        <testViewChartLocation>top</testViewChartLocation>
         
         <!-- custom javascript -->
         <scripts>

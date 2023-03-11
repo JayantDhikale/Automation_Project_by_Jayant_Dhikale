@@ -1,9 +1,9 @@
 Feature: Checkout Step one Page feature
 
-  @Checkout
+  @Checkoutstep1
   Scenario: Verify Checkout Step one Page
-    Given User is on Checkout page 
-    Then Page title is displyed like "Checkout: Your Information"
+    Given User is on Checkout step one page 
+    Then Page title is displyed as "Checkout: Your Information"
     Then First name field is displayed
     Then Last name field is displayed
     Then Postal code field is displayed

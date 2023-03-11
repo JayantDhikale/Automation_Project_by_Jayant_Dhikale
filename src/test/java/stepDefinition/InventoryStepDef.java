@@ -1,10 +1,7 @@
 package stepDefinition;
 
-import java.time.Duration;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,8 +16,8 @@ public class InventoryStepDef {
 	public void user_is_on_inventory_page() {
 		
 		driver = LoginStepDef.driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		 ip = new InventoryPage(driver);
+		LoginStepDef.lsd.waitTime(driver, 5);
+		ip = new InventoryPage(driver);
 	}
 	
 	@Then("App logo is displayed")
@@ -44,7 +41,7 @@ public class InventoryStepDef {
 		Assert.assertTrue("Product sorting button is not Displyed", ip.isSortButtonDisplayed());
 	}
 
-	@Then("Page title is displyed as {string}")
+	@Then("Page title is displyed as like {string}")
 	public void page_title_is_displyed_as(String title) {
 		Assert.assertEquals("Page titleis not Displyed", ip.isTitleDisplayed(), title );
 	}

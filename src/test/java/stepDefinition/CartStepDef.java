@@ -1,7 +1,5 @@
 package stepDefinition;
 
-import java.time.Duration;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -18,8 +16,8 @@ public class CartStepDef {
 	@Given("User is on Cart page")
 	public void user_is_on_cart_page() {
 		driver = LoginStepDef.driver;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		 cp = new CartPage(driver);
+		LoginStepDef.lsd.waitTime(driver, 5);
+		cp = new CartPage(driver);
 	}
 
 	@Then("Page title is displyed as  {string}")
