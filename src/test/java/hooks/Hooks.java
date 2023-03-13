@@ -20,7 +20,7 @@ public class Hooks extends BaseClass {
 	@After
 	public void afterScenario()
 	{	
-		if(scn.isFailed())
+		if(!scn.isFailed())
 		{
 			bc.takeScreenShot(driver, scn);
 		}
